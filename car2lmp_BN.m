@@ -1,16 +1,17 @@
-%translate MS atoms file to LAMMPS data file
-%atom_type atomic
+%translate MS .car file to LAMMPS .data file
+%atom_type atomic in LAMMPS
+
 clc,clear,close all
 
 %all the data below shoube be set yourself
     infile='hBN_no_antisite.car';%name of input .car file
     outfile='hBN_no_antisite.data';%name of output .data file
-    outfile_dir='D:\zm_documents\mathworks\car2data\';%saving dir
+    outfile_dir='D:\mathworks\car2data\'; %saving path
     N_atom_types=2;%number of atom types
     N_each_atom=[1760,1760];%number of each atom
-    lattice_para=[1.420 1.2298 40]; %distance between the nearest simulation box 
-                                    %in x,y,z direction necessary for
-                                    %predic boundary
+    lattice_para=[1.420 1.2298 40]; %distance between the nearest simulation box
+                                    %in x,y,z direction which is necessary for
+                                    %predic boundary type
     masses=[11,14];%masses of atoms,it should be a vector,length(vector)=N_atom_types;
 %end
 N_atoms=sum(N_each_atom);%number of atoms
