@@ -4,8 +4,8 @@
 clc,clear,close all
 
 %all the data below shoube be set yourself
-    infile='hBN_no_antisite.car';%name of input .car file
-    outfile='hBN_no_antisite.data';%name of output .data file
+    infile='hBN.car';%name of input .car file
+    outfile='hBN.data';%name of output .data file
     outfile_dir='D:\mathworks\car2data\'; %saving path
     N_atom_types=2;%number of atom types
     N_each_atom=[1760,1760];%number of each atom
