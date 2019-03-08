@@ -1,6 +1,6 @@
-# car2data-for-lammps
+# msi2lmp
 A matlab script translate '.car' file to the '.data' file.
-
+---
 *'.car'* file can be exported from **Materials Studio**.
 
 *'.data'* file can be read by **LAMMPS** through *'read_data'* command.
