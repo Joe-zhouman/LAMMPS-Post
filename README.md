@@ -10,3 +10,13 @@ Note that in LAMMPS, the atom style should be **atomic**.
 For more style ,you can read LAMMPS document for more imformation and recomposed this script by yourself.
 
 In this script, *h*BN is taken for an example.
+
+* **email**
+  * man.man.man.man.a@gmail.com
+  * joe_zhouman@foxmail.com
+
+* **twitter**
+  @zhouman_LFC
+  
+* **weibo**
+  @zhouman_LFC
