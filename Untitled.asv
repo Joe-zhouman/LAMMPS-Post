@@ -1,0 +1,20 @@
+clc,clear,close all
+save_path = 'D:\zm_documents\LAMMPS\hBN_defects\paper\size_effect';
+
+for model_size = 1 : 3
+    for times = 1
+            range_char = 66;
+        dump = times * 10;
+        load_path = ['D:\zm_documents\LAMMPS\hBN_defects\paper\size_effect\armchair\'...
+              ,num2str(model_size),'\dump',num2str(dump)];
+        load_file = [load_path,'\vacf_pdos.mat'];
+        save_name = [save_path,'\pdos_vacf.xlsx'];
+        
+        load(load_file);
+        
+        filename = save_name;
+        sheet = 'armchair';
+        xlRange = [char(range_char), '1'];
+        xlswrite(filename,vacf,sheet,xlRange)
+    end
+end
